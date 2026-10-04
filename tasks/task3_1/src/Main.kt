@@ -7,6 +7,5 @@ fun main(args: Array<String>) {
         println("Give two command line prompts please!")
         exitProcess(3)
     }
-    println(args[0])
-    println(args[1])
+    println("arg1: ${args[0]}\narg2: ${args[1]}")
 }
