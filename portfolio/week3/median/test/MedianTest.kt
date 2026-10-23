@@ -23,14 +23,14 @@ class MedianTest : FreeSpec({
     }
 
     "Gives correct number when size=2" {
-        median(listOf(2.73f,4.29f)) shouldBe (3.51f plusOrMinus(tolerance))
+        median(listOf(4.29f,2.73f)) shouldBe (3.51f plusOrMinus(tolerance))
     }
 
     "Gives correct number when size=3" {
-        median(listOf(2.73f,4.29f,15.42f)) shouldBe 4.29f
+        median(listOf(15.42f,2.73f,4.29f,)) shouldBe 4.29f
     }
 
     "Gives correct number when size=4" {
-        median(listOf(2.73f,4.29f,15.42f,52.52f)) shouldBe (9.855f plusOrMinus(tolerance))
+        median(listOf(52.52f,15.42f,4.29f,2.73f,)) shouldBe (9.855f plusOrMinus(tolerance))
     }
 })
