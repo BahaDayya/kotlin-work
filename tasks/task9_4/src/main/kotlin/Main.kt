@@ -17,10 +17,12 @@ fun main() {
     catch (error: IllegalArgumentException) {
         println("Illegal argument")
     }
-    catch (error: Exception) {
-        println("Some sort of error occurred")
-    }
+    // moved above exception catch
+    // (wouldnt catch division by 0 otherwise)
     catch (error: ArithmeticException) {
         println("You tried to divide by zero")
+    }
+    catch (error: Exception) {
+        println("Some sort of error occurred")
     }
 }

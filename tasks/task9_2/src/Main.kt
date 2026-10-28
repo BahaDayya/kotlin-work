@@ -15,6 +15,8 @@ fun first() {
 fun second() {
     println("Entered second()")
     val data = listOf(1, 2, 3, 4, 5)
+    //causes error
     //println(data[5])
+    println(data[4])
     println("Leaving second()")
 }
