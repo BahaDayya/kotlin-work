@@ -2,4 +2,6 @@
 
 fun main() {
     // Write your code here
+    val firstPoint = Point(3.0,4.0) 
+    println(firstPoint.toString())
 }
