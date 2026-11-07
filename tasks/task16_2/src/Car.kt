@@ -1,1 +1,8 @@
 // Task 16.2: concrete Car class, inheriting from Vehicle
+
+class Car(fuel: Int) : Vehicle(fuel) {
+    override fun drive() {
+        require(fuelLevel >= 0) { "Invalid fuel amount" }
+        println("Car: vvvVVVVoosssssshhhhhh!")
+    }
+}
